@@ -1,0 +1,115 @@
+.reportContainer {
+  background-color: var(--panel-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  color: var(--text);
+  max-width: 900px;
+  align-self: flex-start;
+  animation: fade-up 0.35s ease;
+  width: 100%;
+}
+
+.header {
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 24px;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--gold);
+}
+
+.meta {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.meta a {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+.section {
+  margin-bottom: 32px;
+  background-color: var(--card-bg);
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.sectionTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.85rem;
+}
+
+.summaryText {
+  line-height: 1.7;
+  color: var(--text-dim);
+  font-size: 1.05rem;
+}
+
+.gridList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+}
+
+.gridItem {
+  background-color: var(--panel-bg);
+  border: 1px solid var(--border-strong);
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: var(--text-dim);
+}
+
+.competitorItem {
+  background-color: var(--panel-bg);
+  border: 1px solid var(--border-strong);
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.competitorName {
+  font-weight: 600;
+  color: var(--text);
+}
+.competitorWebsite {
+  font-size: 0.85rem;
+  color: var(--gold);
+}
+
+.btnDownload {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background-color: var(--text);
+  color: var(--bg);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: opacity var(--transition-fast);
+}
+
+.btnDownload:hover {
+  opacity: 0.8;
+}
